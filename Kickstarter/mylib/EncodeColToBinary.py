@@ -12,6 +12,6 @@ def EncodeColToBinary(dataset,col):
     cat_fac_encode_matrix = onencoder.fit_transform(cat_fac_encoded_vector)
 
     for i in range(len(cat_fac_decoder)):
-        dataset[col+"_"+cat_fac_decoder[i]] = cat_fac_encode_matrix.toarray()[:,i].astype(bool)
+        dataset[col+"_"+cat_fac_decoder[i]] = cat_fac_encode_matrix.toarray()[:,i].astype(int)
     
     return dataset
