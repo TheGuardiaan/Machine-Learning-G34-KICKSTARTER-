@@ -1,0 +1,87 @@
+Combination count: 30
+Datasize: 232026, feature: 39
+
+Start at: 13:59:9  16/5/2021
+
+One iteration took: 10.47 secounds
+Estimated time: 0:10:27
+Expected done at : 14:9:47 16/5/2021
+Fitting 10 folds for each of 30 candidates, totalling 300 fits
+[Parallel(n_jobs=9)]: Using backend LokyBackend with 9 concurrent workers.
+[Parallel(n_jobs=9)]: Done  32 tasks      | elapsed:   14.3s
+[Parallel(n_jobs=9)]: Done 182 tasks      | elapsed:  1.6min
+[Parallel(n_jobs=9)]: Done 300 out of 300 | elapsed:  2.6min finished
+ended at: 14:2:2  16/5/2021
+current TimeScaler:1.7036986640976157
+
+New Model score: 0.6337824118191411
+New model saved
+
+SGD_C : 0.6337824118191411
+
+SEARCH TIME: 162.79 sec
+
+Best model set found on train set:
+
+	best parameters={'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 5.623413251903491e-06}
+	best 'f1_micro' score=0.6337824118191411
+	best index=7
+
+Best estimator CTOR:
+	Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=1e-05, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1,
+                               tol=5.623413251903491e-06, warm_start=True))])
+
+Grid scores ('f1_micro') on development set:
+	[ 0]: 0.503 (+/-0.053) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'optimal', 'SGD__tol': 1e-10}
+	[ 1]: 0.503 (+/-0.069) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'optimal', 'SGD__tol': 2.371373705661655e-08}
+	[ 2]: 0.505 (+/-0.032) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'optimal', 'SGD__tol': 5.623413251903491e-06}
+	[ 3]: 0.506 (+/-0.055) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'optimal', 'SGD__tol': 0.001333521432163324}
+	[ 4]: 0.490 (+/-0.029) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'optimal', 'SGD__tol': 0.31622776601683794}
+	[ 5]: 0.634 (+/-0.004) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 1e-10}
+	[ 6]: 0.634 (+/-0.004) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 2.371373705661655e-08}
+	[ 7]: 0.634 (+/-0.005) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 5.623413251903491e-06}
+	[ 8]: 0.634 (+/-0.004) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 0.001333521432163324}
+	[ 9]: 0.634 (+/-0.005) for {'SGD__alpha': 1e-05, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 0.31622776601683794}
+	[10]: 0.490 (+/-0.026) for {'SGD__alpha': 0.0001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 1e-10}
+	[11]: 0.490 (+/-0.058) for {'SGD__alpha': 0.0001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 2.371373705661655e-08}
+	[12]: 0.485 (+/-0.050) for {'SGD__alpha': 0.0001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 5.623413251903491e-06}
+	[13]: 0.498 (+/-0.038) for {'SGD__alpha': 0.0001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 0.001333521432163324}
+	...
+	[21]: 0.490 (+/-0.081) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 2.371373705661655e-08}
+	[22]: 0.498 (+/-0.062) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 5.623413251903491e-06}
+	[23]: 0.489 (+/-0.071) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 0.001333521432163324}
+	[24]: 0.475 (+/-0.038) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'optimal', 'SGD__tol': 0.31622776601683794}
+	[25]: 0.634 (+/-0.005) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 1e-10}
+	[26]: 0.634 (+/-0.005) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 2.371373705661655e-08}
+	[27]: 0.634 (+/-0.005) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 5.623413251903491e-06}
+	[28]: 0.634 (+/-0.005) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 0.001333521432163324}
+	[29]: 0.634 (+/-0.004) for {'SGD__alpha': 0.001, 'SGD__learning_rate': 'adaptive', 'SGD__tol': 0.31622776601683794}
+
+Detailed classification report:
+	The model is trained on the full development set.
+	The scores are computed on the full evaluation set.
+
+              precision    recall  f1-score   support
+
+           0       0.65      0.86      0.74     59519
+           1       0.59      0.30      0.40     39920
+
+    accuracy                           0.64     99439
+   macro avg       0.62      0.58      0.57     99439
+weighted avg       0.62      0.64      0.60     99439
+
+
+CTOR for best model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=1e-05, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1,
+                               tol=5.623413251903491e-06, warm_start=True))])
+
+best: score=0.63378, model=Pipeline(SGD__alpha=1e-05,SGD__learning_rate='adaptive',SGD__tol=5.623413251903491e-06)

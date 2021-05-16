@@ -1,0 +1,38 @@
+Combination count: 1
+Datasize: 33147, feature: 10
+
+Start at: 18:20:36  11/5/2021
+
+Fitting 10 folds for each of 1 candidates, totalling 10 fits
+[Parallel(n_jobs=10)]: Using backend LokyBackend with 10 concurrent workers.
+[Parallel(n_jobs=10)]: Done   2 out of  10 | elapsed:  3.8min remaining: 15.4min
+[Parallel(n_jobs=10)]: Done  10 out of  10 | elapsed:  4.5min finished
+ended at: 18:29:42  11/5/2021
+current TimeScaler:2
+
+New Model score: 0.02419498279222656
+
+C:\Users\Micha\anaconda3\lib\site-packages\sklearn\neural_network\_multilayer_perceptron.py:582: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+  
+GridSearchCV(cv=10,
+             estimator=Pipeline(steps=[('scaler', StandardScaler()),
+                                       ('MLP',
+                                        MLPRegressor(hidden_layer_sizes=100))]),
+             n_jobs=10,
+             param_grid={'MLP__activation': ['relu'], 'MLP__alpha': [0.0001],
+                         'MLP__batch_size': ['auto'], 'MLP__beta_1': [0.9],
+                         'MLP__beta_2': [0.999], 'MLP__early_stopping': [False],
+                         'MLP__epsilon': [1e-08],
+                         'MLP__hidden_layer_sizes': [100],
+                         'MLP_...
+                         'MLP__learning_rate_init': [0.01],
+                         'MLP__max_fun': [15000], 'MLP__max_iter': [1000],
+                         'MLP__momentum': [0.9], 'MLP__n_iter_no_change': [10],
+                         'MLP__nesterovs_momentum': [True],
+                         'MLP__power_t': [0.5], 'MLP__random_state': [None],
+                         'MLP__shuffle': [True], 'MLP__solver': ['adam'],
+                         'MLP__tol': [0.0001],
+                         'MLP__validation_fraction': [0.1],
+                         'MLP__verbose': [False], 'MLP__warm_start': [False]},
+             scoring='r2', verbose=1)

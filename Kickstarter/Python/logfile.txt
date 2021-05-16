@@ -1,0 +1,246 @@
+04-May-2021 11:38:52
+	Score: 0.5780748663101605
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.50075, cache_size=1000, coef0=1.0, degree=2.0,
+                     gamma='auto', tol=0.0001))])
+04-May-2021 11:40:06
+	Score: 0.5780748663101605
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.50075, cache_size=1000, coef0=1.0, degree=2.0,
+                     gamma='auto', tol=0.0001))])
+04-May-2021 11:46:28
+	Score: 0.5738888888888889
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.50075, cache_size=1000, coef0=1.0, degree=2.0,
+                     gamma='auto', kernel='sigmoid', tol=0.1))])
+04-May-2021 11:54:45
+	Score: 0.5754901960784313
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(cache_size=1000, coef0=6.309573444801933, degree=2.0,
+                     gamma=0.0031622776601683794, kernel='poly', tol=0.0001))])
+04-May-2021 11:58:31
+	Score: 0.5785204991087344
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(cache_size=1000, coef0=3.981071705534973, degree=2.0,
+                     gamma=0.0031622776601683794, kernel='poly', tol=0.1))])
+04-May-2021 14:12:14
+	Score: 0.6027272230917629
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.5994842503189409, cache_size=1000,
+                     coef0=3.9810717055349722, degree=3.0, gamma=0.001,
+                     kernel='poly', tol=0.1))])
+04-May-2021 14:27:25
+	Score: 0.5177361853832443
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+04-May-2021 14:28:23
+	Score: 0.5973210060786954
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+04-May-2021 14:30:42
+	Score: 0.6433464865450382
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+04-May-2021 15:26:13
+	Score: 0.641969769657985
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+04-May-2021 16:14:35
+	Score: 0.6477063973091995
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+04-May-2021 16:41:30
+	Score: 0.6546845239655863
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+11-May-2021 16:32:52
+	Score: 0.6534485531869996
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=1000))])
+11-May-2021 17:15:33
+	Score: 0.6138836312015433
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=100))])
+11-May-2021 19:03:33
+	Score: 0.5924553197685001
+	Model: SGDClassifier(alpha=0.1, early_stopping=True, eta0=1e-05, l1_ratio=0.3,
+              learning_rate='adaptive', max_iter=100000.0, n_iter_no_change=10,
+              n_jobs=2, tol=0.1, warm_start=True)
+11-May-2021 19:06:57
+	Score: 0.5927574345721253
+	Model: SGDClassifier(alpha=0.14839817889675655, early_stopping=True, eta0=1e-05,
+              l1_ratio=0.5, learning_rate='adaptive', max_iter=100000.0,
+              n_iter_no_change=10, n_jobs=2, penalty='l1',
+              tol=2.371373705661655e-08, warm_start=True)
+11-May-2021 19:23:11
+	Score: -1.3898851291934388e+22
+	Model: SGDRegressor(alpha=0.4849693428528198, early_stopping=True, eta0=1e-05,
+             l1_ratio=0.4, learning_rate='adaptive', max_iter=100000.0,
+             n_iter_no_change=10, penalty='elasticnet',
+             tol=0.001333521432163324, warm_start=True)
+11-May-2021 19:28:44
+	Score: -0.00251365997287607
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDRegressor(alpha=0.14839817889675655, early_stopping=True,
+                              eta0=1e-05, l1_ratio=0.3,
+                              learning_rate='adaptive', max_iter=100000.0,
+                              n_iter_no_change=10, tol=0.31622776601683794,
+                              warm_start=True))])
+11-May-2021 19:30:46
+	Score: -0.0010555566841269903
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDRegressor(alpha=0.7196856730011522, early_stopping=True,
+                              eta0=1e-05, l1_ratio=0.1,
+                              learning_rate='adaptive', max_iter=100000.0,
+                              n_iter_no_change=10, penalty='elasticnet',
+                              tol=0.001333521432163324, warm_start=True))])
+11-May-2021 19:35:53
+	Score: 0.598198230990427
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.1, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, tol=1e-10,
+                               warm_start=True))])
+11-May-2021 19:59:29
+	Score: 0.6069477304990354
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True,
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               penalty='l1', tol=0.001333521432163324,
+                               warm_start=True))])
+11-May-2021 19:59:58
+	Score: 0.6225298678033955
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True,
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               penalty='l1', tol=5.623413251903491e-06,
+                               warm_start=True))])
+11-May-2021 20:01:09
+	Score: 0.627598396491506
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               tol=0.31622776601683794, warm_start=True))])
+11-May-2021 20:10:03
+	Score: 0.6356232028116015
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.0071968567300115215, early_stopping=True,
+                               eta0=1e-05, l1_ratio=0.3,
+                               learning_rate='adaptive', loss='squared_loss',
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               tol=0.31622776601683794, warm_start=True))])
+11-May-2021 20:15:12
+	Score: 0.6356533869292577
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1,
+                               penalty='elasticnet', tol=0.001333521432163324,
+                               warm_start=True))])
+11-May-2021 22:09:00
+	Score: 0.5954791977577987
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.5994842503189409, cache_size=1000, coef0=1.0, degree=2,
+                     gamma='auto', kernel='poly', tol=0.0001))])
+11-May-2021 23:01:05
+	Score: 0.5954791977577987
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SVC',
+                 SVC(C=0.5994842503189409, cache_size=1000, coef0=1.0, degree=2,
+                     gamma='auto', kernel='poly', tol=0.0001))])
+11-May-2021 23:12:41
+	Score: 0.6358042073892832
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.4, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, tol=1e-10,
+                               warm_start=True))])
+12-May-2021 12:27:56
+	Score: 0.6407820289807582
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.5, loss='log', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, penalty='l1',
+                               tol=0.001333521432163324, warm_start=True))])
+12-May-2021 13:19:34
+	Score: 0.6157035998980817
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.4, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, tol=1e-07,
+                               warm_start=True))])
+12-May-2021 13:21:45
+	Score: 0.6157063298511265
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.2, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, tol=1e-07,
+                               warm_start=True))])
+12-May-2021 13:22:02
+	Score: 0.6150984603064827
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.4, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1, penalty='l1',
+                               tol=1e-07, warm_start=True))])
+12-May-2021 13:56:20
+	Score: 0.6407820835961701
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.44285714285714284, loss='log',
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               penalty='l1', tol=1e-10, warm_start=True))])
+12-May-2021 19:37:23
+	Score: 0.64105391360388
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.44285714285714284, loss='log',
+                               max_iter=100000.0, n_iter_no_change=10, n_jobs=1,
+                               penalty='l1', power_t=0.6500000000000001,
+                               tol=0.31622776601683794, warm_start=True))])
+16-May-2021 12:47:34
+	Score: 0.6342316975060338
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=0.001, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1,
+                               tol=5.623413251903491e-06, warm_start=True))])
+16-May-2021 14:02:02
+	Score: 0.6337824118191411
+	Model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('SGD',
+                 SGDClassifier(alpha=1e-05, early_stopping=True, eta0=1e-05,
+                               l1_ratio=0.3, learning_rate='adaptive',
+                               loss='squared_loss', max_iter=100000.0,
+                               n_iter_no_change=10, n_jobs=1,
+                               tol=5.623413251903491e-06, warm_start=True))])

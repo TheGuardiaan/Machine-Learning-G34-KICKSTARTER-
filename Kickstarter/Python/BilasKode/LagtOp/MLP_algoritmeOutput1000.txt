@@ -1,0 +1,52 @@
+Combination count: 1
+Datasize: 165733, feature: 39
+
+Start at: 14:17:15  11/5/2021
+
+Fitting 10 folds for each of 1 candidates, totalling 10 fits
+[Parallel(n_jobs=10)]: Using backend LokyBackend with 10 concurrent workers.
+[Parallel(n_jobs=10)]: Done   2 out of  10 | elapsed: 38.5min remaining: 154.1min
+[Parallel(n_jobs=10)]: Done  10 out of  10 | elapsed: 118.9min finished
+ended at: 16:32:52  11/5/2021
+current TimeScaler:2
+
+New Model score: 0.6534485531869996
+New model saved
+
+Pipeline : 0.6534485531869996
+
+SEARCH TIME: 8137.04 sec
+
+Best model set found on train set:
+
+	best parameters={'MLP__activation': 'relu', 'MLP__alpha': 0.0001, 'MLP__batch_size': 'auto', 'MLP__beta_1': 0.9, 'MLP__beta_2': 0.999, 'MLP__early_stopping': False, 'MLP__epsilon': 1e-08, 'MLP__hidden_layer_sizes': 1000, 'MLP__learning_rate': 'constant', 'MLP__learning_rate_init': 0.001, 'MLP__max_fun': 15000, 'MLP__max_iter': 200, 'MLP__momentum': 0.9, 'MLP__n_iter_no_change': 10, 'MLP__nesterovs_momentum': True, 'MLP__power_t': 0.5, 'MLP__random_state': None, 'MLP__shuffle': True, 'MLP__solver': 'adam', 'MLP__tol': 0.0001, 'MLP__validation_fraction': 0.1, 'MLP__verbose': False, 'MLP__warm_start': False}
+	best 'f1_micro' score=0.6534485531869996
+	best index=0
+
+Best estimator CTOR:
+	Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=1000))])
+
+Grid scores ('f1_micro') on development set:
+	[ 0]: 0.653 (+/-0.008) for {'MLP__activation': 'relu', 'MLP__alpha': 0.0001, 'MLP__batch_size': 'auto', 'MLP__beta_1': 0.9, 'MLP__beta_2': 0.999, 'MLP__early_stopping': False, 'MLP__epsilon': 1e-08, 'MLP__hidden_layer_sizes': 1000, 'MLP__learning_rate': 'constant', 'MLP__learning_rate_init': 0.001, 'MLP__max_fun': 15000, 'MLP__max_iter': 200, 'MLP__momentum': 0.9, 'MLP__n_iter_no_change': 10, 'MLP__nesterovs_momentum': True, 'MLP__power_t': 0.5, 'MLP__random_state': None, 'MLP__shuffle': True, 'MLP__solver': 'adam', 'MLP__tol': 0.0001, 'MLP__validation_fraction': 0.1, 'MLP__verbose': False, 'MLP__warm_start': False}
+
+Detailed classification report:
+	The model is trained on the full development set.
+	The scores are computed on the full evaluation set.
+
+C:\Users\Micha\anaconda3\lib\site-packages\sklearn\utils\validation.py:67: FutureWarning: Pass labels=None as keyword args. From version 0.25 passing these as positional arguments will result in an error
+  warnings.warn("Pass {} as keyword args. From version 0.25 "
+              precision    recall  f1-score   support
+
+           0       0.68      0.79      0.73     99063
+           1       0.59      0.45      0.51     66669
+
+    accuracy                           0.65    165732
+   macro avg       0.64      0.62      0.62    165732
+weighted avg       0.65      0.65      0.64    165732
+
+
+CTOR for best model: Pipeline(steps=[('scaler', StandardScaler()),
+                ('MLP', MLPClassifier(hidden_layer_sizes=1000))])
+
+best: score=0.65345,  model=Pipeline(MLP__activation='relu', MLP__alpha=0.0001, MLP__batch_size='auto', MLP__beta_1=0.9, MLP__beta_2=0.999, MLP__early_stopping=False, MLP__epsilon=1e-08, MLP__hidden_layer_sizes=1000, MLP__learning_rate='constant', MLP__learning_rate_init=0.001, MLP__max_fun=15000, MLP__max_iter=200, MLP__momentum=0.9, MLP__n_iter_no_change=10, MLP__nesterovs_momentum=True, MLP__power_t=0.5, MLP__random_state=None, MLP__shuffle=True, MLP__solver='adam', MLP__tol=0.0001, MLP__validation_fraction=0.1, MLP__verbose=False, MLP__warm_start=False)
